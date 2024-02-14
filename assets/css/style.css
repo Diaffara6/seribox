@@ -10,6 +10,30 @@ a {
   color: #47b2e4;
   text-decoration: none;
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;  
+  border-radius: 20px; 
+  overflow: hidden; 
+}
+
+.videoSeri {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .video-container {
+    text-align: center; /* Positionne la vidéo à droite sur les écrans larges */
+  }
+}
+
+@media (max-width: 799px) {
+  .video-container {
+      text-align: center; /* Centre la vidéo sur les écrans plus petits */
+  }
+}
 
 a:hover {
   color: #73c5eb;
@@ -518,6 +542,9 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+}
+.dem{
+  color: #37517e;
 }
 
 .section-title h2 {
